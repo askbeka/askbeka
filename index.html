@@ -17,10 +17,34 @@
     	font-size: 24px;
     	line-height: 26.4px;
     }
-    h3 {
-    	font-size: 14px;
+    h2 {
+    	font-size: 25px;
     	line-height: 15.4px;
     }
+    h2 .hello {
+      margin: 0 auto;
+      background: linear-gradient(270deg, #18f0b8, #18a2f0, #db5640);
+      -webkit-animation: Gradient 30s ease infinite;
+    	-moz-animation: Gradient 30s ease infinite;
+    	animation: Gradient 30s ease infinite;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    @-webkit-keyframes Gradient {
+  		0%{background-position:0% 50%}
+  		50%{background-position:100% 50%}
+  		100%{background-position:0% 50%}
+  	}
+  	@-moz-keyframes Gradient {
+  		0%{background-position:0% 50%}
+  		50%{background-position:100% 50%}
+  		100%{background-position:0% 50%}
+  	}
+  	@keyframes Gradient { 
+  		0%{background-position:0% 50%}
+  		50%{background-position:100% 50%}
+  		100%{background-position:0% 50%}
+  	}
   </style>
 </head>
 <body>
@@ -28,6 +52,6 @@
 
 <h2>As you can see...</h2>
 
-<h2>Hello World!</h2>
+<h2 class="hello">Hello World!</h2>
 </body>
 </html>
